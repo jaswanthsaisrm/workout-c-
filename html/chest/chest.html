@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abs</title>
+    <link rel="stylesheet" href="abs.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+       $(document).ready(function() {
+    for (let i = 1; i <= 7; i++) {
+        $("#day" + i).click(function() {
+            $("#container").fadeToggle("slow");
+        });
+    }
+});
+
+    </script>
+</head>
+<body>
+    <div class="days-banner">
+        <div class="small-bold-text banner-text"> INTERMEDIATE WORKOUT</div>
+    </div>
+    <nav>
+        <div class="container main-nav">
+            <div class="daylinks daylinks-links">
+                <ul class="flex">
+                    <li><a href="#" id="day1" class="hover-links day-button">day1</a></li>
+                    <li><a href="#" id="day2" class="hover-links day-button">day2</a></li>
+                    <li><a href="#" id="day3" class="hover-links day-button">day3</a></li>
+                    <li><a href="#" id="day4" class="hover-links day-button">day4</a></li>
+                    <li><a href="#" id="day5" class="hover-links day-button">day5</a></li>
+                    <li><a href="#" id="day6" class="hover-links day-button">day6</a></li>
+                    <li><a href="#" id="day7" class="hover-links day-button">day7</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            
+        </div>
+    </header>
+
+    
+    <div class="container" id="container" style="display: none;">
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="russian-twist-.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Russian Twists</h4>
+                    <h3> x32 </h3>
+                    <p>Sit, knees bent. Twist torso, touch ground each side. Core engaged.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+       
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="another-exercise.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Push-Ups</h4>
+                    <h3> x20 </h3>
+                    <p>Start in a plank position, lower your body until your chest nearly touches the ground, then push back up.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="exercise3.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Burpees</h4>
+                    <h3> x15 </h3>
+                    <p>Begin in a standing position, drop into a squat, then kick your feet back to a plank position. Do a push-up, then jump back to the squat position and jump up with arms overhead.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="exercise4.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Jumping Jacks</h4>
+                    <h3> x20 </h3>
+                    <p>Start with feet together and arms at your sides, then jump while simultaneously spreading your legs and raising your arms above your head.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="exercise5.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Plank</h4>
+                    <h3> Hold for 1 minute </h3>
+                    <p>Get into a push-up position but with your weight on your forearms instead of your hands, and hold the position, keeping your body straight from head to heels.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- Add your own exercises here -->
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="exercise6.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Squats</h4>
+                    <h3> x20 </h3>
+                    <p>Stand with feet shoulder-width apart, bend your knees and lower your body until your thighs are parallel to the ground, then return to standing position.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="exercises">
+            <div class="flex exercise-container">
+                <div class="exercise-pic">
+                    <img src="exercise7.png" alt="">
+                </div>
+                <div class="exercise-name flex">
+                    <h4>Jump Lunges</h4>
+                    <h3> x15 per leg </h3>
+                    <p>Start in a lunge position, then jump up, switching legs mid-air so you land in a lunge position with the opposite leg forward.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+    </div>
+
+    <script src="https://kit.fontawesome.com/521adc1c90.js" crossorigin="anonymous"></script>
+</body>
+</html>

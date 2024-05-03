@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-inline-section: 30px;
+    --bg-color: #191f36;
+    --snd-bf-color: #262840;
+    --text-color: #fff;
+    --main-color: #59B2F4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1 {
+    
+    font-size: 3rem;
+}
+
+h2 {
+   
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Utility functions */
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-links {
+    background-color: var(--main-color);
+    color: aliceblue;
+    border-radius: 6px;
+    font-weight: 500;
+    box-shadow: 0 0 2px black;
+    padding: 12px;
+}
+
+.hover-links:hover {
+    background-color: black;
+}
+
+/* Top banner */
+.days-banner {
+    background:rgb(20, 20, 35);
+  
+    background-size: 300px;
+}
+
+.banner-text {
+    backdrop-filter: blur(3px);
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* Nav */
+ul {
+    list-style: none;
+}
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.daylinks {
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.daylinks ul {
+    justify-content: center;
+    gap: 60px;
+}
+
+/* The exercises section */
+.exercise {
+    padding: 30px var(--padding-inline-section);
+}
+
+.exercise-container {
+    background:rgb(20, 20, 35);
+    gap: 30px;
+    margin-left: 60px;
+}
+
+.exercise-pic img {
+    width: 300px; /* Added 'px' unit */
+    border-radius: 10px;
+}
+
+.exercise-name {
+    flex-direction: column;
+    align-items: flex-start;
+}
+

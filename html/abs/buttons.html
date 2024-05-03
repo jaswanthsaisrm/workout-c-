@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abs</title>
+    <link rel="stylesheet" href="abs.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="days-banner">
+        <div class="small-bold-text banner-text"> BEGINNER WORKOUT</div>
+    </div>
+    <nav>
+        <div class="daylinks daylinks-links">
+            <ul class="flex">
+                <li><button onclick="showDay(1)" class="hover-links day-button">Day 1</button></li>
+                <li><button onclick="showDay(2)" class="hover-links day-button">Day 2</button></li>
+                <li><button onclick="showDay(3)" class="hover-links day-button">Day 3</button></li>
+                <li><button onclick="showDay(4)" class="hover-links day-button">Day 4</button></li>
+                <li><button onclick="showDay(5)" class="hover-links day-button">Day 5</button></li>
+                <li><button onclick="showDay(6)" class="hover-links day-button">Day 6</button></li>
+                <li><button onclick="showDay(7)" class="hover-links day-button">Day 7</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="day-content">
+        <h1>Day 1</h1>
+        <div class="DAY1">
+            <!-- Day 1 content -->
+            <div class="container">
+                <!-- Add your exercises here -->
+                <section class="exercises">
+                    <!-- Exercise 1 -->
+                </section>
+                <br>
+                <section class="exercises">
+                    <!-- Exercise 2 -->
+                </section>
+                <br>
+                <!-- Add more exercises as needed -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/521adc1c90.js" crossorigin="anonymous"></script>
+    <script>
+        function showDay(dayNumber) {
+            var dayContent = document.querySelector('.day-content');
+            switch (dayNumber) {
+                case 1:
+                    dayContent.innerHTML = `
+                        <h1>Day 1</h1>
+                        <div class="DAY1">
+                            <!-- Day 1 content -->
+                            <div class="container">
+                                <!-- Add your exercises here -->
+                                <section class="exercises">
+                                    <!-- Exercise 1 -->
+                                </section>
+                                <br>
+                                <section class="exercises">
+                                    <!-- Exercise 2 -->
+                                </section>
+                                <br>
+                                <!-- Add more exercises as needed -->
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 2:
+                    dayContent.innerHTML = `
+                        <h1>Day 2</h1>
+                        <div class="DAY2">
+                            <!-- Day 2 content -->
+                            <div class="container">
+                                <!-- Add your exercises here -->
+                                <section class="exercises">
+                                    <!-- Exercise 1 -->
+                                </section>
+                                <br>
+                                <section class="exercises">
+                                    <!-- Exercise 2 -->
+                                </section>
+                                <br>
+                                <!-- Add more exercises as needed -->
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case 3:
+                    // Repeat the same structure for other days
+                    break;
+                // Handle other days similarly
+                default:
+                    dayContent.innerHTML = `
+                        <h1>Invalid Day</h1>
+                        <div>Please select a valid day.</div>
+                    `;
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
